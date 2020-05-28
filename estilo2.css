@@ -1,0 +1,153 @@
+﻿body {
+    background-image: url(fondo.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    margin:0px;
+}
+/* justify-content sive ara trabajar sobre el eje de las X (horizontolal)
+    flex-direction elige la direccion en la que quieres trabajar
+    align-items trabaja sobre los elementos de las Y (Vertical)
+
+    */
+.arriba {
+    display: flex;
+    justify-content: space-between;
+}
+
+.abajo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+    .abajo h4{
+      color:  rgba(255, 73, 179, 0.8);
+      font-size: 16px;
+    }
+
+ul{
+    padding: 0px;
+}
+.menu ul {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 35px;
+}
+
+    .menu ul li {
+        display: inline;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+        .menu ul li a {
+            text-decoration: none;
+            padding: 2px 2px;
+            border-radius: 10px; 
+            transition: color 0.8s , background 0.8s;
+            }
+
+            .menu ul li a:hover {
+                color: rgba(255, 73, 179, 0.8);
+                background-color: white;
+                }
+            
+
+.multimedia{
+    text-align: center;
+    border:dotted;
+    border-radius:20px;
+    color: deeppink;
+    margin: 0px 150px;
+    font-size: 20px;
+}
+    #galeria .col-lg-3{
+        margin: 0 !important;
+        padding: 25px;
+       
+    }
+        #galeria img{
+            width: 100%;
+            height: 250px;
+        }
+            #galeria img:hover{
+                border: 5px solid #fff;
+            }
+                #galeria img:target{
+                    position: fixed;
+                    background: rgba(0,0,0,0.8);
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+
+.ui-menu { width: 150px; }
+
+
+.quienessomos{
+    text-align: center;
+    border: dotted;
+    border-radius: 20px;
+    color: green;
+    margin: 0px 150px;
+    font-size: 20px;
+}
+
+.contactanos {
+    text-align: center;
+    border: dashed;
+    border-radius: 20px;
+    color: #8e0082;
+    margin: 0px 150px;
+    font-size: 20px;
+}
+
+#boton-oculto{
+    display: none;  
+  }
+
+    .form{
+        padding: 0px 30%;
+        margin-top: 40px;    
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form label{
+        font-weight: bold;
+        color:#007bff;
+    }
+    div.form-group{
+        margin: 10px;
+    }
+
+.juegos{
+    text-align: center;
+    border: dotted;
+    border-radius: 20px;
+    color: rgb(255, 0, 0);
+    margin: 0px 150px;
+    font-size: 20px;
+}
+
+.nomjuego{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 200px;
+}
+
+.nomjuego #juego2{
+    color: #fff;
+}
+
+
+@media screen and (max-width: 800px){
+    .nomjuego{
+       flex-direction: column;
+       justify-content: center;
+       padding: 10px 100px;
+       
+    }
+}
