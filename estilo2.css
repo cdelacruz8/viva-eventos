@@ -148,17 +148,17 @@ ul{
     padding: 30px 200px;
 }
 
-/* @keyframes skew {
+/*@keyframes skew {
     100%{
         transform: skew(180deg);
     }
-}
+}*/
 
 .nomjuego #juego1{
-    animation-name: skew;
-    animation-duration: 3s;
+  /*   animation-name: skew;
+    animation-duration: 3s;*/
     color: #fff;
-} */
+} 
 
  .nomjuego #juego1:hover{
     transition: transform 2s;
