@@ -22,7 +22,7 @@
     .abajo h4{
       color:  rgba(255, 73, 179, 0.8);
       font-size: 16px;
-      text-align: center;
+      text-align: center;      
     }
 
 ul{
@@ -68,12 +68,21 @@ ul{
         padding: 25px;
        
     }
+
+        @keyframes rotategal{
+            100%{
+                transform: rotate3d(1, 2, -1, 360deg);
+            }
+        }
         #galeria img{
             width: 100%;
             height: 250px;
+            animation-name: rotategal;
+            animation-duration: 1.5s;
         }
             #galeria img:hover{
                 border: 5px solid #fff;
+
             }
                 #galeria img:target{
                     position: fixed;
@@ -139,9 +148,51 @@ ul{
     padding: 30px 200px;
 }
 
-.nomjuego #juego2{
-    color: #fff;
+/* @keyframes skew {
+    100%{
+        transform: skew(180deg);
+    }
 }
+
+.nomjuego #juego1{
+    animation-name: skew;
+    animation-duration: 3s;
+    color: #fff;
+} */
+
+ .nomjuego #juego1:hover{
+    transition: transform 2s;
+    transform: skew(180deg);
+} 
+
+/* @keyframes rotate{
+    100%{
+        transform: rotate(1turn);
+    }
+}
+
+.nomjuego #juego2{
+    animation-name: rotate;
+    animation-duration: 1s;
+} */
+
+ .nomjuego #juego2:hover{
+    transition: transform 1s;
+    transform: rotate(1turn); /*turn es numero de vuentas, para asignar grados se utiliza deg*/
+    
+} 
+
+.nomjuego #juego3:hover{
+    transition: transform 1s;
+	transform: scale(1.3,1.3); /*se separa con , para diferenciar cuanto quieres escalar el elemento en X o en Y, pero puedes dejar un solo valor para escalarlo por igual en los dos ejes*/
+}
+
+.nomjuego #juego4:hover{
+    transition: transform 1s;
+    transform: translate(25px,10px);
+    
+}
+
 
 
 @media screen and (max-width: 800px){
