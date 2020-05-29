@@ -157,9 +157,10 @@ ul{
 }*/
 
 .nomjuego #juego1{
+        color: white;
   /*   animation-name: skew;
     animation-duration: 3s;*/
-    color: #fff;
+    
 } 
 
  .nomjuego #juego1:hover{
